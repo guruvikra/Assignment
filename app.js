@@ -32,7 +32,7 @@ else{
     // Create a new express app and configure it with middleware, routes, and other settings.
     const app= express()
     app.use(express.json())
-    app.use(taskrouter)
+    app.use('/api/v1',taskrouter)
 
 
     //worker it is used to process with the things inside of the queue we added 
