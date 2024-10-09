@@ -2,6 +2,9 @@ import {taskQueue} from '../utils/bullMq.js'
 import { limiter,rateLimitPerMin,rateLimitPerSec } from '../middlewares/rateLimiter.middleware.js'
 import { logTaskCompletion } from '../utils/logger.js';
 
+
+
+//this is task function werre we take userid as input and we are validating userid is there are not or we are thowing error and we are also applying ratelimit as you asked and then we are also applying queueing with the help of bullmq which used  redis for it and allso adding the log function
 export const taskController = async (req ,res) => {
     try {
       const {user_id} =req.body;

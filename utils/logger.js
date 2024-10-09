@@ -1,3 +1,5 @@
+// to implement logging i have not used any other packaage wiht the help of fs module i have created a log function
+
 
 import fs from 'fs';
 import path from 'path';
